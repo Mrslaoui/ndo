@@ -44,7 +44,7 @@ public class page_d extends AppCompatActivity {
 
             @Override
             public void run() {
-                Intent i = new Intent(page_d.this, DDD.class);
+                Intent i = new Intent(page_d.this, EEE.class);
                 startActivity(i);
 
 

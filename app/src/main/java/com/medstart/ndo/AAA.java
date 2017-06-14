@@ -25,10 +25,11 @@ public class AAA extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-        //Interstitial
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(getString(R.string.admob_interstitial_id));
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        AdRequest adRequest2 = new AdRequest.Builder().build();
+        mInterstitialAd.loadAd(adRequest2);
+
 
     }
 
@@ -38,5 +39,10 @@ public class AAA extends AppCompatActivity {
         if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         }
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
+
+
     }
 }
